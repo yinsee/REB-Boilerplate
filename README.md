@@ -1,9 +1,12 @@
-#React + Bootstrap + Electron boilerplate#
+# React + Bootstrap + Electron boilerplate
+Skip the trouble of setting up all-over again by just downloading this template and run `npm install` to install the dependencies.
+
 by yinsee@3b.my
 
-##Built-in scripts##
-- Compile executable:
-npm run electron-build
+# Built-in scripts
 
-- Test dev in Electron:
-npm run electron-test
+- Test your development in Electron:
+`npm run electron-test`
+
+- Compile app and Package in to executable:
+`npm run electron-build`
