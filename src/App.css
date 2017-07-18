@@ -1,0 +1,60 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width:100%;
+    height:100%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 50px;
+}
+
+.App-header {
+  background-color: #222;
+  color:#eee;
+}
+
+.App-body {
+    flex:1;
+    background-color: #f7f7f4;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.App-footer {
+    background-color: #222;
+    color:#eee;
+    padding:10px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-menu {
+    width:300px;
+    background-color: white;
+    border-right:3px solid rgba(0,0,0,0.1);
+}
+
+.App-content {
+    flex:1;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 767px) {
+    .App-menu {
+        transition: transform 0.2s ease-out;
+        margin-left:-300px;
+    }
+    .App-menu[data-toggle=show] {
+        transform: translateX(300px);
+    }
+}
