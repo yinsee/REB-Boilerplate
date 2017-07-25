@@ -25,11 +25,15 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="App-header">
-                    <button className="pull-right btn btn-success visible-xs" onClick={this.toggleMenu}>Menu {this.state.showmenu ? "a" : "b"}</button>
-                    <button onClick={()=>{
-                        electron.dialog.showErrorBox('error', 'test')
+                    <div className="exitbutton pull-right" onClick={()=>{
+                        electron.dialog.showErrorBox('Exit', 'Application will now exit.')
                         electron.app.quit()
-                    }}>Exit</button>
+                    }}>x</div>
+                    <div className="visible-xs burgermenu pull-left" onClick={this.toggleMenu}>
+                        <div className="burgerline"></div>
+                        <div className="burgerline"></div>
+                        <div className="burgerline"></div>
+                    </div>
                     <img src={logo} className="App-logo" alt="logo"/>
                     <big>Welcome to React</big>
                 </div>

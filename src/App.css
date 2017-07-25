@@ -1,3 +1,8 @@
+body {
+    -webkit-user-select: none;
+    cursor: default;
+}
+
 .App {
     display: flex;
     flex-direction: column;
@@ -14,6 +19,7 @@
 .App-header {
   background-color: #222;
   color:#eee;
+  -webkit-app-region: drag;
 }
 
 .App-body {
@@ -57,4 +63,33 @@
     .App-menu[data-toggle=show] {
         transform: translateX(300px);
     }
+}
+
+.exitbutton {
+    display:block;
+    width:16px; height:16px;
+    text-align:center; line-height: 16px;
+    font-size:10px;
+    border-radius: 50%;
+    margin-left:10px;
+    margin:8px 10px;
+
+    color:rgba(0,0,0,0.5);
+    background-color:red;
+    border-color:black;
+}
+
+.burgermenu {
+    margin: 8px 10px;
+    background:transparent;
+    border:2px solid rgba(255,255,255,0.5);
+    border-radius: 4px;
+    padding:4px;
+}
+
+.burgerline {
+    height:2px;
+    background-color:rgba(255,255,255,0.5);
+    width:20px;
+    margin:4px;
 }
